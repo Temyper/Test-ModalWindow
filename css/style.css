@@ -12,16 +12,19 @@ main {
   display: flex;
 }
 
+body {
+  background-image: url(../resource/background.png);
+}
+
 #button-modal-window,
 #modal-window__close {
-  background-color: greenyellow;
+  background-color: #adff2f;
   margin: 50px auto;
 }
 
 #modal-window {
   display: none;
   position: fixed;
-  background-color: white;
   top: 0;
   left: 0;
   width: 100%;
@@ -30,7 +33,7 @@ main {
 }
 
 #modal-window__wrapper {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
   position: fixed;
   width: 100%;
@@ -38,6 +41,10 @@ main {
 
 #modal-window__content {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: white;
   height: 50%;
   width: 50%;
