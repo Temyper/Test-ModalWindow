@@ -1,13 +1,12 @@
 $(function () {
   const modalWindow = $("#modal-window");
 
-  $("#open_modal-window").click(function (e) {
+  $("#button-modal-window").click(function (e) {
     modalWindow.fadeIn();
-
     e.preventDefault();
   });
 
-  $("close-modal-window").click(function (e) {
+  $("#modal-window__close").click(function (e) {
     modalWindow.fadeOut();
 
     e.preventDefault();
