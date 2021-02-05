@@ -10,6 +10,9 @@ a {
 
 main {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 body {
@@ -52,4 +55,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+#modal-window__button-answer {
+  background-color: green;
+  margin: 10px auto;
+}
+
+#answer {
+  text-align: center;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
