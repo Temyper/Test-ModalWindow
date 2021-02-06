@@ -13,11 +13,28 @@ $(function () {
     e.preventDefault();
   });
 
-  $(
-    "#modal-window__close, #modal-window__wrapper, #modal-window__button-answer"
-  ).click(function (e) {
-    $("#modal-window").fadeOut();
-    console.log("close");
+  $("#modal-window__changing-items").click(function (e) {
+    let text = $("#modal-window__textbox-for-changing-items").val();
+
+    let madeButtonID = "made-button";
+
+    let madeButtonString = $(`<button id=\"${madeButtonID}\">${text}</button>`);
+
+    $("#wrap-for-changing-items").html(madeButtonString);
+
+    $(`#${madeButtonID}`).click(SaysHello);
+
     e.preventDefault();
   });
+
+  $(
+    "#modal-window__close, #modal-window__wrapper, #modal-window__button-answer, #modal-window__changing-items"
+  ).click(function (e) {
+    $("#modal-window").fadeOut();
+    e.preventDefault();
+  });
+
+  function SaysHello() {
+    alert("Hello");
+  }
 });
