@@ -1,4 +1,4 @@
-// TODO:20210204入力フォームとその反映（ttps://daib-log.com/modalwindow/）
+// TODO:20210205入力フォームとその反映（ttps://daib-log.com/modalwindow/）
 $(function () {
   $("#button-modal-window").click(function (e) {
     $("#modal-window").fadeIn();
@@ -6,7 +6,8 @@ $(function () {
   });
 
   $("#modal-window__button-answer").click(function (e) {
-    $("#answer").text("answer");
+    let answer = $("#modal-window__textbox").val();
+    $("#answer").text(answer);
     console.log("write");
     // 20210205別々に付与されたイベントは妨げられない
     e.preventDefault();
