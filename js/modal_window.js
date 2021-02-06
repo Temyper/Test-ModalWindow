@@ -1,4 +1,3 @@
-// TODO:20210205入力フォームとその反映（ttps://daib-log.com/modalwindow/）
 $(function () {
   $("#button-modal-window").click(function (e) {
     $("#modal-window").fadeIn();
